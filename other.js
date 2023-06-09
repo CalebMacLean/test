@@ -144,4 +144,34 @@ const COLORS = [
     }
     gameWon();
   }); 
+
+  const newAlphabet = Array.from('abcdefghijklmnopqrstuvwxyz');
+  function callAlphabet(alphabetArray) {
+    for(let letter of alphabetArray) {
+      console.log(letter.toUpperCase());
+    }
+  }
   
+  const NewMath = {
+    add(x,y) {
+      return x + y
+    },
+    subtract(x,y) {
+      return x - y
+    },
+    square(x) {
+      return x * x;
+    },
+    isBigger(x,y) {
+      return x > y;
+    },
+    writePairs(x) {
+      const result = [];
+      for(let i = 0; i < x; i++) {
+        for(let j = 0; j < i; j++) {
+          result.push([i,j]);
+        }
+      }
+      return result;
+    }
+  }
